@@ -12,11 +12,12 @@ I'm passionate about development, logic building , and exploring coding language
 - CSS
 - React
 
-![React](![Static Badge](https://img.shields.io/badge/React-%230362fc)
+(![Static Badge](https://img.shields.io/badge/React-%230362fc)
+
 )
-![Python](![Static Badge](https://img.shields.io/badge/Python-%23090a0a)
+(![Static Badge](https://img.shields.io/badge/Python-%23090a0a)
 )
-![Javascript]((![Static Badge](https://img.shields.io/badge/Javascript-%23bdb70b)
+((![Static Badge](https://img.shields.io/badge/Javascript-%23bdb70b)
 )
-![HTML](![Static Badge](https://img.shields.io/badge/HTML-%23de5e09))
-![CSS]((![Static Badge](https://img.shields.io/badge/CSS-%23000000))
+(![Static Badge](https://img.shields.io/badge/HTML-%23de5e09))
+((![Static Badge](https://img.shields.io/badge/CSS-%23000000))
