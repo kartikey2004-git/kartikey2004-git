@@ -19,8 +19,6 @@
  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kartikey2004-git&theme=high-contrast">
 </p>  
 
-## 🔔 𝙼𝚢 𝙻𝚊𝚝𝚎𝚜𝚝 𝙶𝚒𝚝𝙷𝚞𝚋 𝙼𝚎𝚝𝚛𝚒𝚌𝚜
-![Metrics](/github-metrics.svg)
 
 
 
