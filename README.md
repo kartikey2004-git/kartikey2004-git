@@ -12,11 +12,5 @@ I'm passionate about development, logic building , and exploring coding language
 - CSS
 - React
 
-![Static Badge](https://img.shields.io/badge/React-%230362fc)
+![Static Badge](https://img.shields.io/badge/React-%2300eeff?logoSize=28)![Static Badge](https://img.shields.io/badge/Python-%230a0a0a?logoSize=28)![Static Badge](https://img.shields.io/badge/Javascript-%23e6701c?logoSize=28)![Static Badge](https://img.shields.io/badge/HTML-%232e0f7d?logoSize=28)![Static Badge](https://img.shields.io/badge/CSS-%2348044d?logoSize=28)
 
-![Static Badge](https://img.shields.io/badge/Python-%23090a0a)
-
-(![Static Badge](https://img.shields.io/badge/Javascript-%23bdb70b)
-
-(![Static Badge](https://img.shields.io/badge/HTML-%23de5e09)
-(![Static Badge](https://img.shields.io/badge/CSS-%23000000)
