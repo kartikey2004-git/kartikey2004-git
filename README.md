@@ -12,6 +12,5 @@ I'm passionate about development, logic building , and exploring coding language
 - CSS
 - React
 
-- ## Languages 
 
 
