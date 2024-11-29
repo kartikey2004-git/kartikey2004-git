@@ -1,5 +1,5 @@
-<h2>Welcome! <a href="https://github.com/ksauraj"> <img src="https://visitor-badge.laobi.icu/badge?page_id=ksauraj" alt="Visitors"></a></h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzlsZHg3eGliNTBhOWYwZmU0Z3NxaWZzZnlsdHpkYTY3YmVwNXhleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/kAm4u0lhDCmXnugz6p/giphy.gif" width ="50"> <img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=E05D44&random=false&width=600&lines=Hey+there!+It's+Sauraj...;Passionate+19-year-old%2C+open+source+explorer;Android+and+Linux+enthusiast;Computer+Science+explorer%2C+project+builder"/> 
+
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzlsZHg3eGliNTBhOWYwZmU0Z3NxaWZzZnlsdHpkYTY3YmVwNXhleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/kAm4u0lhDCmXnugz6p/giphy.gif" width ="50"> <img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=E05D44&random=false&width=600&lines=Hey+there!+It's+Sauraj...;Passionate+19-year-old%2C+open+source+explorer;Android+and+Linux+enthusiast;Computer+Science+explorer%2C+project+builder"/> 
 
 - Undergraduate IT Engineering Freshman on a quest for learning and growth
 - Passionate about AI, Data Science, and exploring coding languages.
