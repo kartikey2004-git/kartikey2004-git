@@ -1,16 +1,22 @@
-## Hi there 👋
+# Hello ! dostooooo
 
-<!--
-**kartikey2004-git/kartikey2004-git** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm an Undergraduate ECE Engineer on the way of learning
+I'm passionate about development, logic building , and exploring coding languages. 
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Skills and Tools
+
+- Javascript
+- Python
+- C/C++
+- CSS
+- React
+
+![React](![Static Badge](https://img.shields.io/badge/React-%230362fc)
+)
+![Python](![Static Badge](https://img.shields.io/badge/Python-%23090a0a)
+)
+![Javascript]((![Static Badge](https://img.shields.io/badge/Javascript-%23bdb70b)
+)
+![HTML](![Static Badge](https://img.shields.io/badge/HTML-%23de5e09))
+![CSS]((![Static Badge](https://img.shields.io/badge/CSS-%23000000))
