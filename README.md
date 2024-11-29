@@ -12,4 +12,4 @@ I'm passionate about development, logic building , and exploring coding language
 - CSS
 - React
 
-https://github-readme-stats.vercel.app/api?username=kartikey2004-git&show_icons=true&theme=radical
+
