@@ -1,5 +1,5 @@
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzlsZHg3eGliNTBhOWYwZmU0Z3NxaWZzZnlsdHpkYTY3YmVwNXhleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/kAm4u0lhDCmXnugz6p/giphy.gif" width ="50"> <img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=E05D44&random=false&width=600&lines=Hellooo!+Dostooo...;Web developer+guy%2C+project+builder"/> 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzlsZHg3eGliNTBhOWYwZmU0Z3NxaWZzZnlsdHpkYTY3YmVwNXhleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/kAm4u0lhDCmXnugz6p/giphy.gif" width ="50"> <img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=E05D44&random=false&width=600&lines=Hellooo!+Dostooo...;I am Web developer+guy%2C+project+builder"/> 
 
 - Undergraduate IT Engineering Freshman on a quest for learning and growth
 - Passionate about AI, Data Science, and exploring coding languages.
