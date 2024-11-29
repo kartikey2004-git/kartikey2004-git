@@ -13,4 +13,4 @@ I'm passionate about development, logic building , and exploring coding language
 - React
 
 
-(https://github-readme-stats.vercel.app/api?username=kartikey2004-git&show_icons=true&theme=radical
+(https://github-readme-stats.vercel.app/api?username=kartikey2004-git&show_icons=true&theme=radical)
