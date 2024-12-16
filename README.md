@@ -26,6 +26,7 @@
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+<br/>
 ![Static Badge](https://img.shields.io/badge/React-black?logo=REACT&logoColor=%230ef)
 ![Static Badge](https://img.shields.io/badge/Redux-white?logo=APPWRITE&logoColor=purple)
 ![Static Badge](https://img.shields.io/badge/Firebase-black?logo=FIREBASE&logoColor=red)
