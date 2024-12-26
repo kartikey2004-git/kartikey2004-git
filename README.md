@@ -2,7 +2,7 @@
 
 - Undergraduate ECE Engineer At ABESEC
 - Passionate about Development and exploring coding languages.
-- Skilled in various languages:  Python(basics), C/C++ (basics), CSS, HTML , Javascript 
+- Skilled in various languages:  Python(basics), C/C++ (basics), Javascript 
 
 
 ### ⚙ &nbsp;Kartikey Bhatnagar 's GitHub Analytics
