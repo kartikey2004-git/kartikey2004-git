@@ -35,26 +35,6 @@ Docker • AWS • Vercel • Render • RabbitMQ • Git • Cloudinary
 
 ---
 
-## 📌 Featured Projects
-
-### 🔹 **RouteX — Collaborative API Design Platform**
-Real-time API testing, workspace sync, live response streaming, AI JSON body generation.  
-Tech: Next.js, WebSockets, OAuth, AI SDK
-
-### 🔹 **VartaX — Distributed Real-Time Chat System**
-Microservices chat with RabbitMQ, Redis caching, <200ms latency, reliable delivery semantics.  
-Tech: Node.js, RabbitMQ, Redis, WebSockets, Prisma
-
-### 🔹 **Rank Tracker — SEO Automation**
-Cron-based SERP tracking with retry logic, dashboards, analytics.  
-Tech: Next.js, Prisma, MongoDB, BrightData API
-
-### 🔹 **Event Scheduler — Personalized Booking Platform**
-Conflict-free scheduling logic, availability pages, global deployment.  
-Tech: Next.js, NeonDB, Clerk, Vercel
-
----
-
 ## 📊 GitHub Analytics
 
 <p align="left">
