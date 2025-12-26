@@ -1,7 +1,7 @@
-<h1 align="left">Hi, I'm Kartikey 👋</h1>
+<h1 align="left">Hi, I'm Kartikey </h1>
 
 <p align="left">
-  <strong>Full-Stack Engineer • API Architecture</strong>
+  <strong>Full-Stack Engineer</strong>
 </p>
 
 <p align="left">
