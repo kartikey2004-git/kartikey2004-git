@@ -11,15 +11,15 @@
 
 ---
 
-## 🚀 About Me
+## About Me
 - Engineer focused on **clean architecture, performance, and reliability**  
 - Love working with **Next.js, Node.js, Prisma, RabbitMQ, Redis**  
 - Building systems involving **APIs, real-time collaboration, cron workers, and microservices**  
-- Currently working on: **API testing tools, chat systems, rank automation, and scheduling platforms**
+- Currently working on: **API testing tool and Codesense AI: AI which helps DEV'S (LOL but that's true)**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend:**  
 Next.js • React • Tailwind • React Query • Server Components
