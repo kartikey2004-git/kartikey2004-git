@@ -1,41 +1,49 @@
-<h1 align="left">Hi, I'm Kartikey </h1>
+# Kartikey Bhatnagar
 
-<p align="left">
-  <strong>Full-Stack Engineer</strong>
-</p>
+**Full-stack engineer . I architect systems that respond in milliseconds, not seconds, and don't require 3 AM incident debugging.**
 
-<p align="left">
-  I build scalable products with Next.js, Node.js, PostgreSQL, MongoDB, Redis, and distributed system patterns.  
-  I enjoy designing APIs, real-time features, background workers, and solving engineering problems end-to-end.
-</p>
 
----
+## Most days, I'm somewhere between
 
-## About Me
-- Engineer focused on **clean architecture, performance, and reliability**  
-- Love working with **Next.js, Node.js, Prisma, RabbitMQ, Redis**  
-- Building systems involving **APIs, real-time collaboration, cron workers, and microservices**  
-- Currently working on: **API testing tool and Codesense AI: AI which helps DEV'S (LOL but that's true)**
+* [Building & Shipping](https://kartikcodes.vercel.app/)
+* Learning & Reading 
+* [Writing & Sharing Knowledge](https://markstack-app.vercel.app/blogs)
+* [Listening to something](https://open.spotify.com/playlist/2EEmbAMT39fVdMnJwEEkWq?si=PAwL0SMKS9-UZ_FmgF6MNw)
 
----
+## Stack
 
-## Tech Stack
+- **Core Tech** — TypeScript, Next.js, React, Node.js, PostgreSQL, MongoDB, Redis, Prisma 
+- **Extended Stack** — pgvector, LangChain, tRPC, Inngest, WebSockets, Zod
+- **Infrastructure** — Docker, AWS, RabbitMQ, Vercel, Git, Cloudinary
 
-**Frontend:**  
-Next.js • React • Tailwind • React Query • Server Components
 
-**Backend:**  
-Node.js • Express • Prisma • REST APIs • WebSockets • Cron Jobs • Microservices
+## Work
 
-**Databases:**  
-PostgreSQL • MongoDB • NeonDB • Redis • Supabase
+**[Kyron](https://github.com/kartikey2004-git/AI-Code-Review)** 
+Durable PR review pipeline via Inngest. Tree-sitter AST chunking → pgvector retrieval → Gemini review → GitHub comment. End-to-end review under 45s for PRs < 500 lines. Incremental indexing cuts embedding API calls by ~80%.
 
-**DevOps / Tools:**  
-Docker • AWS • Vercel • Render • RabbitMQ • Git • Cloudinary
+**[CodeSense AI](https://github.com/kartikey2004-git/CodeSense-AI)**  
+RAG pipeline over GitHub repos. 768-dim pgvector embeddings with sub-20ms cosine similarity at 10k+ vectors. AST-aware LangChain chunking reduces prompt tokens by ~35%. tRPC for end-to-end type safety, Clerk for multi-tenant auth.
 
----
+**[Kairo CLI](https://github.com/kartikey2004-git/Kairo)**  
+Agentic CLI on Gemini tool-calling. Autonomously chains up to 8 tool calls (web search, code execution) per task without per-step human confirmation. OAuth 2.0 Device Flow for headless auth. Session resumes in < 200ms.
 
-## 📊 GitHub Analytics
+**[Vartax](https://github.com/kartikey2004-git/vartaX)**  
+Real-time chat over Socket.IO with write-confirmed ACK. Message roundtrip under 80ms. 3-service decomposition via RabbitMQ; OTP event published and 202 returned under 5ms, decoupling 200–400ms SMTP latency.
+
+
+
+## Currently
+
+- Open to SDE-1 / full-stack engineering roles
+- Not deploying on Fridays
+- Prototyping random ideas at 2 AM
+
+
+[Work](https://kartikcodes.vercel.app) · [LinkedIn](https://linkedin.com/in/kartikey-bhatnagar) · [GitHub](https://github.com/kartikey2004-git) · kartikeybhatnagar247@gmail.com
+
+
+## GitHub Analytics
 
 <p align="left">
 <a href="https://github.com/kartikey2004-git">
