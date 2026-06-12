@@ -58,12 +58,6 @@ Real-time chat over Socket.IO with write-confirmed ACK. Message roundtrip under 
  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kartikey2004-git&theme=high-contrast">
 </p>
 
----
-
-## 🔥 GitHub Streak
-![](https://nirzak-streak-stats.vercel.app/?user=kartikey2004-git&theme=dark&hide_border=false)
-
----
 
 <p align="center">
   <sub>Always building. Always learning. Always shipping 🚀</sub>
