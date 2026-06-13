@@ -40,7 +40,7 @@ Real-time chat over Socket.IO with write-confirmed ACK. Message roundtrip under 
 - Prototyping random ideas at 2 AM
 
 
-[Work](https://kartikcodes.vercel.app) · [LinkedIn](https://linkedin.com/in/kartikey-bhatnagar) · [GitHub](https://github.com/kartikey2004-git) · kartikeybhatnagar247@gmail.com
+[Work](https://kartikcodes.vercel.app) · [LinkedIn](https://www.linkedin.com/in/kartikey-bhatnagar-dev) · [GitHub](https://github.com/kartikey2004-git) · kartikeybhatnagar247@gmail.com
 
 
 ## GitHub Analytics
