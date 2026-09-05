@@ -11,13 +11,13 @@ Full-stack engineer. I like building systems from the ground up and understandin
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
 **[YSync](https://github.com/kartikey2004-git/YSync)** &nbsp;·&nbsp; <samp>WebSockets Redis IndexedDB Sequence CRDT</samp><br>
-Custom sequence CRDT for real-time collaborative editing. WebSocket sync with <br/> causal merging and presence broadcasting. Supports 50+ concurrent clients with <20ms propagation and zero data loss across offline conflicts.
+<samp>Custom sequence CRDT for real-time collaborative editing. WebSocket sync with <br/> causal merging and presence broadcasting. Supports 50+ concurrent clients with <20ms propagation and zero data loss across offline conflicts.</samp>
 
 **[Kyron](https://github.com/kartikey2004-git/AI-Code-Review)** &nbsp;·&nbsp; <samp>Octokit Inngest pgvector RAG</samp><br>
-Durable PR review pipeline via Inngest. Tree-sitter AST chunking, pgvector retrieval, Gemini review, and GitHub comments. End-to-end review under 45s for PRs <500 lines. Incremental indexing cuts embedding API calls by ~80%.
+<samp>Durable PR review pipeline via Inngest. Tree-sitter AST chunking, pgvector retrieval, Gemini review, and GitHub comments. End-to-end review under 45s for PRs <500 lines. Incremental indexing cuts embedding API calls by ~80%.</samp>
 
 **[SQLFlow](https://github.com/kartikey2004-git/SQLFlow)** &nbsp;·&nbsp; <samp>PostgreSQL MongoDB Express.js Next.js</samp><br>
-Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth.
+<samp>Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth.</samp>
 
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
