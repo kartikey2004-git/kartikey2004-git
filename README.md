@@ -19,6 +19,7 @@ Full-stack engineer. I like building systems from the ground up and understandin
 **[SQLFlow](https://github.com/kartikey2004-git/SQLFlow)** &nbsp;·&nbsp; <samp>PostgreSQL MongoDB Express.js Next.js</samp><br>
 <samp>Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth.</samp>
 
+<br>
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
 <samp>
@@ -41,19 +42,21 @@ Prometheus&nbsp;&nbsp; Alertmanager&nbsp;&nbsp; Loki&nbsp;&nbsp; Tempo&nbsp;&nbs
 k6
 </samp>
 
+<br>
 <img src="./hd-currently.svg" width="620" alt="currently"/>
 
 - Open to SDE-1 / Full-Stack engineering roles, especially backend and infrastructure.
 - Sleep on Friday nights, no work over the weekend.
 - 2 AM is for building random ideas
 
+<br>
 <img src="./hd-most-days.svg" width="620" alt="most days, i'm somewhere between"/>
 
 - [Building & Shipping](https://kartikeycodes.tech)
 - [Writing & Sharing Knowledge](https://kartikeycodes.tech/blogs)
 - [Listening to something](https://open.spotify.com/playlist/2EEmbAMT39fVdMnJwEEkWq?si=PAwL0SMKS9-UZ_FmgF6MNw)
 
-
+<br>
 <img src="./hd-stats.svg" width="620" alt="stats"/>
 
 
