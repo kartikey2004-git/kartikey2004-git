@@ -24,12 +24,12 @@ import json
 import os
 import sys
 import urllib.request
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 
 API = "https://api.github.com/graphql"
 
 # Two things are pinned for determinism, both learned the hard way:
-#  * the contribution window, to whole UTC days — otherwise "the past year" is
+#  * the contribution window, to whole UTC days — otherwise the boundary is
 #    measured from request time and days drift between week buckets, moving the
 #    sparkline a fraction of a pixel and committing noise every night;
 #  * privacy: PUBLIC on repositories — otherwise a personal token sees private
@@ -104,8 +104,9 @@ MON = ["jan", "feb", "mar", "apr", "may", "jun",
 # ---------------------------------------------------------------- data
 
 def window():
+    """Year-to-date, UTC: January 1st of the current year through today."""
     today = datetime.now(timezone.utc).date()
-    start = today - timedelta(days=364)
+    start = date(today.year, 1, 1)
     return (f"{start.isoformat()}T00:00:00Z", f"{today.isoformat()}T23:59:59Z")
 
 
@@ -256,10 +257,11 @@ def draw_stats(s):
     H = 148
     weekly = s["weekly"] or [0]
     peak = max(weekly) or 1
+    year = datetime.now(timezone.utc).year
     p = [head(WIDTH, H)]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(0, 50, s["total"], 52, "e-f", extra=' font-weight="600"')
-             + label(0, 72, "contributions in the last year", 12) + '</g>')
+             + label(0, 72, f"contributions in {year}", 12) + '</g>')
     for i, (val, lab) in enumerate([(s["active"], "active days"),
                                     (s["best_week"], "best week")]):
         p.append(f'<g opacity="0">{fade(0.30 + i * 0.12)}'
