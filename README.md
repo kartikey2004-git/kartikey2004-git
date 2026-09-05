@@ -1,16 +1,3 @@
-<div align="center">
-
-<img src="./ascii.svg" width="460" alt="Andrii Drok"/>
-
-<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
-
-[andriidrok.com](https://andriidrok.com) &nbsp;·&nbsp;
-[instagram](https://www.instagram.com/andrii_drok/) &nbsp;·&nbsp;
-[linkedin](https://www.linkedin.com/in/andriidrok/) &nbsp;·&nbsp;
-[email](mailto:clb@mirasvit.com)
-
-</div>
-
 <img src="./hd-about.svg" width="620" alt="about"/>
 
 ### Kartikey Bhatnagar | Engineer<br>
@@ -51,6 +38,24 @@ Durable PR review pipeline via Inngest. Tree-sitter AST chunking, pgvector retri
 **[SQLFlow](https://github.com/kartikey2004-git/SQLFlow)** &nbsp;·&nbsp; <samp>PostgreSQL MongoDB Express.js Next.js</samp><br>
 Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth.
 
+<img src="./hd-currently.svg" width="620" alt="currently"/>
+
+- Open to SDE-1 / Full-Stack engineering roles, especially backend and infrastructure.
+- Sleep on Friday nights, no work over the weekend.
+- 2 AM is for building random ideas
+
+
+<div align="center">
+
+<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
+
+[github](https://github.com/kartikey2004-git) &nbsp;·&nbsp;
+[portfolio](http://kartikeycodes.tech/) &nbsp;·&nbsp;
+[instagram](https://www.instagram.com/k4rtikhuuu/) &nbsp;·&nbsp;
+[email](mailto:kartikeybhatnagar247@gmail.com)
+
+</div>
+
 <img src="./hd-stats.svg" width="620" alt="stats"/>
 
 <div align="center">
@@ -60,26 +65,3 @@ Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisi
 <img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
 
 <img src="./year.svg" width="620" alt="The last year, one character per day"/>
-
-</div>
-
-<img src="./hd-about-this-page.svg" width="620" alt="about this page"/>
-
-Every graphic here is generated, not embedded from anyone else's server.<br>
-`ascii.svg` is a photo pushed through a character ramp by<br>
-[`scripts/make_portrait.py`](scripts/make_portrait.py); the stat graphics and<br>
-these section headings are drawn by [a scheduled action](.github/workflows/stats.yml)<br>
-straight from the GitHub GraphQL API, once a day, committing only what changed.
-
-They animate with SMIL inside the SVG, because GitHub strips scripts from<br>
-READMEs — and since nothing loads from a third party, nothing here can<br>
-rate-limit or go dark. The headings are SVGs for the same reason: GitHub also<br>
-strips CSS, so an image is the only way to put this page's own typeface on them.
-
-The typeface is [JetBrains Mono](scripts/fonts), subset to just the characters<br>
-each graphic draws and inlined as base64. That isn't only for looks: the<br>
-portrait's grid assumes an advance width of exactly 0.600 em, and a viewer whose<br>
-default monospace is narrower would otherwise see it squeezed.
-
-Language totals cover public repositories only. `year.svg` uses the portrait's<br>
-character ramp: `:` `+` `#` `@`, quiet to loud.
