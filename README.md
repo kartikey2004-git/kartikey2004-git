@@ -3,10 +3,10 @@
 ### Kartikey Bhatnagar | Engineer<br>
 
 <samp>
-Full-stack engineer. I like building systems from the ground up and understanding the trade-offs behind them. Most of my time goes into figuring out what’s happening underneath the abstractions, especially when something breaks, needs to scale, or needs to be more reliable and fault-tolerant. I enjoy building the infrastructure around products just as much as building the products themselves.
+Full-stack engineer. I like building systems from the ground up and understanding the trade-offs behind them. Most of my time is spent figuring out what’s happening underneath the abstractions especially when something breaks, needs to scale, or needs to become more reliable and fault-tolerant. I enjoy building the infrastructure around products just as much as building the products themselves.
 </samp>
 
-<br>
+<br><br>
 
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
