@@ -186,8 +186,8 @@ STACK = [
 ]
 paras = []
 for label, items in STACK:
-    paras.append(dict(runs=[(label, 600, B)], before=22))
-    paras.append(dict(runs=[("     ".join(items), 400, B)], before=4))
+    paras.append(dict(runs=[(label, 600, B)], before=36))
+    paras.append(dict(runs=[("     ".join(items), 400, B)], before=8))
 block(paras, "t-stack.svg")
 
 block([dict(runs=[(t, 400, B)], indent=16, bullet=True) for t in (
