@@ -1,60 +1,35 @@
 <img src="./hd-about.svg" width="620" alt="about"/>
 
-### Kartikey Bhatnagar | Engineer<br>
+<img src="./t-name.svg" alt="Kartikey Bhatnagar | Engineer"/>
 
-<samp>
-Full-stack engineer. I like building systems from the ground up and understanding the trade-offs behind them. Most of my time is spent figuring out what’s happening underneath the abstractions especially when something breaks, needs to scale, or needs to become more reliable and fault-tolerant. I enjoy building the infrastructure around products just as much as building the products themselves.
-</samp>
+<img src="./t-bio.svg" width="620" alt="Full-stack engineer. I like building systems from the ground up and understanding the trade-offs behind them. Most of my time is spent figuring out what's happening underneath the abstractions especially when something breaks, needs to scale, or needs to become more reliable and fault-tolerant. I enjoy building the infrastructure around products just as much as building the products themselves."/>
 
 <br><br>
 
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
-**[YSync](https://github.com/kartikey2004-git/YSync)** &nbsp;·&nbsp; <samp>WebSockets Redis IndexedDB Sequence CRDT</samp><br>
-<samp>Custom sequence CRDT for real-time collaborative editing. WebSocket sync with <br/> causal merging and presence broadcasting. Supports 50+ concurrent clients with <20ms propagation and zero data loss across offline conflicts.</samp>
+<a href="https://github.com/kartikey2004-git/YSync"><img src="./t-ysync.svg" width="620" alt="YSync · WebSockets Redis IndexedDB Sequence CRDT. Custom sequence CRDT for real-time collaborative editing. WebSocket sync with causal merging and presence broadcasting. Supports 50+ concurrent clients with <20ms propagation and zero data loss across offline conflicts."/></a>
 
-**[Kyron](https://github.com/kartikey2004-git/AI-Code-Review)** &nbsp;·&nbsp; <samp>Octokit Inngest pgvector RAG</samp><br>
-<samp>Durable PR review pipeline via Inngest. Tree-sitter AST chunking, pgvector retrieval, Gemini review, and GitHub comments. End-to-end review under 45s for PRs <500 lines. Incremental indexing cuts embedding API calls by ~80%.</samp>
+<a href="https://github.com/kartikey2004-git/AI-Code-Review"><img src="./t-kyron.svg" width="620" alt="Kyron · Octokit Inngest pgvector RAG. Durable PR review pipeline via Inngest. Tree-sitter AST chunking, pgvector retrieval, Gemini review, and GitHub comments. End-to-end review under 45s for PRs <500 lines. Incremental indexing cuts embedding API calls by ~80%."/></a>
 
-**[SQLFlow](https://github.com/kartikey2004-git/SQLFlow)** &nbsp;·&nbsp; <samp>PostgreSQL MongoDB Express.js Next.js</samp><br>
-<samp>Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth.</samp>
+<a href="https://github.com/kartikey2004-git/SQLFlow"><img src="./t-sqlflow.svg" width="620" alt="SQLFlow · PostgreSQL MongoDB Express.js Next.js. Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth."/></a>
 
 <br>
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
-<samp>
-
-**LANGUAGES**<br>
-JavaScript&nbsp;&nbsp; TypeScript&nbsp; C++&nbsp;&nbsp; Python<br>
-
-**DATA**<br>
-MongoDB&nbsp;&nbsp; PostgreSQL&nbsp;&nbsp; SQL&nbsp;&nbsp; Redis
-
-**BACKEND &amp; WEB**<br>
-React&nbsp;&nbsp; Next.js&nbsp;&nbsp; Tailwind CSS&nbsp;&nbsp; Node.js&nbsp;&nbsp; Express&nbsp;&nbsp; Prisma&nbsp;&nbsp; <br> Firebase 
-Supabase&nbsp;&nbsp; Appwrite&nbsp;&nbsp; ShadCN&nbsp;&nbsp; Clerk&nbsp;&nbsp; Postman<br>
-
-**DEVOPS &amp; INFRASTRUCTURE**<br>
-Vercel&nbsp;&nbsp; Netlify&nbsp;&nbsp; Render&nbsp;&nbsp; Git&nbsp;&nbsp; RabbitMQ&nbsp;&nbsp; Docker&nbsp;&nbsp; AWS<br>
-
-**OBSERVABILITY**<br>
-Prometheus&nbsp;&nbsp; Alertmanager&nbsp;&nbsp; Loki&nbsp;&nbsp; Tempo&nbsp;&nbsp; OpenTelemetry&nbsp;&nbsp; ELK Stack<br>
-k6
-</samp>
+<img src="./t-stack.svg" width="620" alt="Languages: JavaScript, TypeScript, C++, Python. Data: MongoDB, PostgreSQL, SQL, Redis. Backend & web: React, Next.js, Tailwind CSS, Node.js, Express, Prisma, Firebase, Supabase, Appwrite, ShadCN, Clerk, Postman. DevOps & infrastructure: Vercel, Netlify, Render, Git, RabbitMQ, Docker, AWS. Observability: Prometheus, Alertmanager, Loki, Tempo, OpenTelemetry, ELK Stack, k6."/>
 
 <br>
 <img src="./hd-currently.svg" width="620" alt="currently"/>
 
-- Open to SDE-1 / Full-Stack engineering roles, especially backend and infrastructure.
-- Sleep on Friday nights, no work over the weekend.
-- 2 AM is for building random ideas
+<img src="./t-currently.svg" width="620" alt="Open to SDE-1 / Full-Stack engineering roles, especially backend and infrastructure. Sleep on Friday nights, no work over the weekend. 2 AM is for building random ideas."/>
 
 <br>
 <img src="./hd-most-days.svg" width="620" alt="most days, i'm somewhere between"/>
 
-- [Building & Shipping](https://kartikeycodes.tech)
-- [Writing & Sharing Knowledge](https://kartikeycodes.tech/blogs)
-- [Listening to something](https://open.spotify.com/playlist/2EEmbAMT39fVdMnJwEEkWq?si=PAwL0SMKS9-UZ_FmgF6MNw)
+<a href="https://kartikeycodes.tech"><img src="./t-days-1.svg" alt="Building & Shipping"/></a><br>
+<a href="https://kartikeycodes.tech/blogs"><img src="./t-days-2.svg" alt="Writing & Sharing Knowledge"/></a><br>
+<a href="https://open.spotify.com/playlist/2EEmbAMT39fVdMnJwEEkWq?si=PAwL0SMKS9-UZ_FmgF6MNw"><img src="./t-days-3.svg" alt="Listening to something"/></a>
 
 <br>
 <img src="./hd-stats.svg" width="620" alt="stats"/>
@@ -72,16 +47,12 @@ k6
 
 <img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
 
+<br><br>
 
+<a href="https://kartikeycodes.tech"><img src="./t-link-work.svg" alt="work"/></a><a href="https://www.linkedin.com/in/kartikey-bhatnagar-dev"><img src="./t-link-linkedin.svg" alt="linkedin"/></a><a href="https://github.com/kartikey2004-git"><img src="./t-link-github.svg" alt="github"/></a><a href="mailto:kartikeybhatnagar247@gmail.com"><img src="./t-link-email.svg" alt="email"/></a><a href="https://www.instagram.com/k4rtikhuuu/"><img src="./t-link-instagram.svg" alt="instagram"/></a>
 
+<br>
 
-[work](https://kartikeycodes.tech) &nbsp;·&nbsp;
-[linkedin](https://www.linkedin.com/in/kartikey-bhatnagar-dev) &nbsp;·&nbsp;
-[github](https://github.com/kartikey2004-git) &nbsp;·&nbsp;
-[email](mailto:kartikeybhatnagar247@gmail.com) &nbsp;·&nbsp;
-[instagram](https://www.instagram.com/k4rtikhuuu/) &nbsp;&nbsp;
+<img src="./t-tagline.svg" alt="Always building. Always learning. Always shipping"/>
 
-<p align="center">
-  <sub>Always building. Always learning. Always shipping</sub>
-</p>
-  
+</div>

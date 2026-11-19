@@ -17,5 +17,7 @@ each glyph carries its own `x` coordinate; the layout doesn't depend on the font
 | `geistsans-400.woff2` | 400 | basic latin, for the stat graphics |
 | `geistsans-600.woff2` | 600 | basic latin, for the stat graphics |
 | `geistsans-head.woff2` | 600 | printable ascii, for the section headings |
+| `geistsans-text-400.woff2` | 400 | latin plus ’ · • – —, for the prose SVGs (`t-*.svg`) |
+| `geistsans-text-600.woff2` | 600 | the same, for names and labels |
 
 Licensed under the SIL Open Font License 1.1 — see `OFL.txt`.
