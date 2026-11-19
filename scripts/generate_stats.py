@@ -9,7 +9,7 @@ Outputs, all sharing one visual language with ascii.svg (the portrait):
   langs.svg   top languages, by bytes and by repo count
   year.svg    the year as a character map, in the portrait's own ramp
 
-Every file uses the portrait's grey ink, Geist Sans (Geist Mono for the year grid), a transparent
+Every file uses the portrait's grey ink, Geist Sans, a transparent
 background, and the same left-to-right clipPath reveal with a cursor riding
 the edge. Motion is SMIL because GitHub strips <script> from READMEs.
 
@@ -60,12 +60,8 @@ LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f",
              rule="#d8dee4", surface="#ffffff")
 DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
             rule="#30363d", surface="#0d1117")
-# GeistMono is the inlined subset below; the rest is a fallback for the unlikely
+# GeistSans is the inlined subset below; the rest is a fallback for the unlikely
 # case a renderer ignores the embedded face.
-MONO = ("GeistMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
-        "&apos;Liberation Mono&apos;,monospace")
-# Everything reads in Geist Sans except the character grids (the year map and
-# its ramp legend), which need a fixed advance and so stay in Geist Mono.
 SANS = ("GeistSans,ui-sans-serif,system-ui,-apple-system,"
         "&apos;Segoe UI&apos;,Roboto,Helvetica,Arial,sans-serif")
 # Advance widths (em) of Geist Sans SemiBold, for placing the heading rule.
@@ -75,7 +71,7 @@ FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
 
 @functools.lru_cache(maxsize=None)
-def face(filename, weight, family="GeistSans"):
+def face(filename, weight):
     """One @font-face rule with the subset inlined as a data URI.
 
     An external font URL cannot work here: these SVGs are loaded through <img>,
@@ -85,7 +81,7 @@ def face(filename, weight, family="GeistSans"):
     """
     with open(os.path.join(FONT_DIR, filename), "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
-    return (f"@font-face{{font-family:{family};font-style:normal;"
+    return (f"@font-face{{font-family:GeistSans;font-style:normal;"
             f"font-weight:{weight};font-display:block;"
             f"src:url(data:font/woff2;base64,{b64}) format('woff2')}}")
 
@@ -100,9 +96,10 @@ def font_head():
     return face("geistsans-head.woff2", 600)
 
 
-def font_grid():
-    """Geist Mono, for the year map's character grid only."""
-    return face("geistmono-400.woff2", 400, "GeistMono")
+def grid_xs(x0, n, pitch):
+    """One x per glyph, so a proportional face still sits on a fixed grid."""
+    return " ".join(f"{x0 + k * pitch:.2f}".rstrip("0").rstrip(".")
+                    for k in range(n))
 
 WIDTH = 620            # every graphic shares one column width
 LEFT = 34              # shared left inset, so stacked blocks line up
@@ -399,7 +396,7 @@ def draw_year(s):
                 return i
         return 4
 
-    p = [head(WIDTH, H, font=font_text() + font_grid())]
+    p = [head(WIDTH, H)]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(pad_l, 16, "THE YEAR", 9, "m-f",
                      extra=' letter-spacing="1.3"')
@@ -411,7 +408,7 @@ def draw_year(s):
     lx = WIDTH - 6
     p.append(f'<g opacity="0">{fade(1.30)}'
              + label(lx - 78, 32, "less", 9, "m-f", "end")
-             + f'<text font-family="{MONO}" xml:space="preserve" x="{lx - 72}" y="32" class="d-f" '
+             + f'<text xml:space="preserve" x="{lx - 72}" y="32" class="d-f" '
              f'font-size="{FS}">{" ".join(RAMP[1:])}</text>'
              + label(lx, 32, "more", 9, "m-f", "end") + '</g>')
 
@@ -433,8 +430,8 @@ def draw_year(s):
                  f'from="0" to="{w_px:.1f}" begin="{delay:.2f}s" dur="0.40s" '
                  f'fill="freeze"/></rect></clipPath>')
         safe = line.replace("&", "&amp;").replace("<", "&lt;")
-        p.append(f'<g clip-path="url(#{cid})"><text font-family="{MONO}" xml:space="preserve" '
-                 f'x="{pad_l}" y="{y + FS - 0.6:.1f}" class="d-f" '
+        p.append(f'<g clip-path="url(#{cid})"><text xml:space="preserve" '
+                 f'x="{grid_xs(pad_l, len(line), CW)}" y="{y + FS - 0.6:.1f}" class="d-f" '
                  f'font-size="{FS}">{safe}</text></g>')
 
     for r, lab in ((1, "mon"), (3, "wed"), (5, "fri")):

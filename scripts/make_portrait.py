@@ -20,10 +20,9 @@ Two things decide whether the output is any good, and neither is a parameter:
   * The darkening curve below. Without it the face comes out washed out and
     featureless — brows, glasses and lips all dissolve.
 
-The grid bakes in an advance width of exactly 0.600 em (CHAR_W / FONT_SIZE), so
-after generating, run scripts/embed_portrait_font.py to inline Geist Mono.
-Otherwise a viewer whose default monospace is narrower — Consolas is ≈0.55 —
-sees the portrait about 7% too narrow.
+The face is Geist Sans, which is proportional, so every character is placed on
+the grid explicitly: the <text> carries one x per glyph (CHAR_W apart). After
+generating, run scripts/embed_portrait_font.py to inline the font.
 
 Motion is SMIL, because GitHub strips <script> from READMEs: each row is
 revealed by a clipPath wipe with a cursor block riding its edge, staggered top
@@ -47,11 +46,12 @@ ROW_RATIO = 0.48           # monospace cells are about twice as tall as wide
 
 FG_LIGHT = "#6e7681"       # readable on GitHub light — the portrait's grey
 FG_DARK = "#c9d1d9"        # and its dark-mode step
-CHAR_W = 7.74              # 0.600 em at FONT_SIZE — keep these in step
+CHAR_W = 7.74              # grid pitch, px
 FONT_SIZE = 12.9
 LINE_H = 15
 ROW_DELAY = 0.09           # per-row stagger, seconds
-FAMILY = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+FAMILY = ("GeistSans,ui-sans-serif,system-ui,-apple-system,"
+          "&apos;Segoe UI&apos;,Roboto,Helvetica,Arial,sans-serif")
 
 
 def prep(path, crop=None):
@@ -125,8 +125,10 @@ def build_svg(lines, cols=COLS):
                  f'<animate attributeName="width" from="0" to="{w:.1f}" '
                  f'begin="{begin}" dur="{ROW_DELAY}s" fill="freeze"/>'
                  f'</rect></clipPath>')
+        xs = " ".join(f"{pad + k * CHAR_W:.2f}".rstrip("0").rstrip(".")
+                      for k in range(len(line)))
         p.append(f'<g clip-path="url(#c{i})"><text xml:space="preserve" '
-                 f'x="{pad}" y="{y + 11.2:.1f}" class="a" '
+                 f'x="{xs}" y="{y + 11.2:.1f}" class="a" '
                  f'font-size="{FONT_SIZE}">{safe}</text></g>')
         # the cursor: a small block riding the wipe edge, gone once the row lands
         p.append(f'<rect y="{y + 1}" width="6" height="12" class="a" '
