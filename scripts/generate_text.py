@@ -173,23 +173,6 @@ project("SQLFlow", "t-sqlflow.svg", "PostgreSQL MongoDB Express.js Next.js",
         "type-normalized result grading. Dual-database architecture with "
         "TTL-based audit logs for bounded storage growth.")
 
-STACK = [
-    ("LANGUAGES", ["JavaScript", "TypeScript", "C++", "Python"]),
-    ("DATA", ["MongoDB", "PostgreSQL", "SQL", "Redis"]),
-    ("BACKEND & WEB", ["React", "Next.js", "Tailwind CSS", "Node.js",
-                       "Express", "Prisma", "Firebase", "Supabase",
-                       "Appwrite", "ShadCN", "Clerk", "Postman"]),
-    ("DEVOPS & INFRASTRUCTURE", ["Vercel", "Netlify", "Render", "Git",
-                                 "RabbitMQ", "Docker", "AWS"]),
-    ("OBSERVABILITY", ["Prometheus", "Alertmanager", "Loki", "Tempo",
-                       "OpenTelemetry", "ELK Stack", "k6"]),
-]
-paras = []
-for label, items in STACK:
-    paras.append(dict(runs=[(label, 600, B)], before=36))
-    paras.append(dict(runs=[("     ".join(items), 400, B)], before=8))
-block(paras, "t-stack.svg")
-
 block([dict(runs=[(t, 400, B)], indent=16, bullet=True) for t in (
     "Open to SDE-1 / Full-Stack engineering roles, especially backend and "
     "infrastructure.",

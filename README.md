@@ -15,11 +15,6 @@
 <a href="https://github.com/kartikey2004-git/SQLFlow"><img src="./t-sqlflow.svg" width="620" alt="SQLFlow · PostgreSQL MongoDB Express.js Next.js. Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth."/></a>
 
 <br>
-<img src="./hd-stack.svg" width="620" alt="stack"/>
-
-<img src="./t-stack.svg?v=3" width="620" alt="Languages: JavaScript, TypeScript, C++, Python. Data: MongoDB, PostgreSQL, SQL, Redis. Backend & web: React, Next.js, Tailwind CSS, Node.js, Express, Prisma, Firebase, Supabase, Appwrite, ShadCN, Clerk, Postman. DevOps & infrastructure: Vercel, Netlify, Render, Git, RabbitMQ, Docker, AWS. Observability: Prometheus, Alertmanager, Loki, Tempo, OpenTelemetry, ELK Stack, k6."/>
-
-<br>
 <img src="./hd-currently.svg" width="620" alt="currently"/>
 
 <img src="./t-currently.svg" width="620" alt="Open to SDE-1 / Full-Stack engineering roles, especially backend and infrastructure. Sleep on Friday nights, no work over the weekend. 2 AM is for building random ideas."/>
