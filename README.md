@@ -4,7 +4,6 @@
 
 <img src="./t-bio.svg" width="620" alt="Full-stack engineer. I like building systems from the ground up and understanding the trade-offs behind them. Most of my time is spent figuring out what's happening underneath the abstractions especially when something breaks, needs to scale, or needs to become more reliable and fault-tolerant. I enjoy building the infrastructure around products just as much as building the products themselves."/>
 
-<br><br>
 
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
@@ -14,12 +13,10 @@
 
 <a href="https://github.com/kartikey2004-git/SQLFlow"><img src="./t-sqlflow.svg" width="620" alt="SQLFlow · PostgreSQL MongoDB Express.js Next.js. Multitenant SQL sandbox with isolated PostgreSQL schemas. Dynamic schema provisioning, safe untrusted query execution, and type-normalized result grading. Dual-database architecture with TTL-based audit logs for bounded storage growth."/></a>
 
-<br>
 <img src="./hd-currently.svg" width="620" alt="currently"/>
 
 <img src="./t-currently.svg" width="620" alt="Open to SDE-1 / Full-Stack engineering roles, especially backend and infrastructure. Sleep on Friday nights, no work over the weekend. 2 AM is for building random ideas."/>
 
-<br>
 <img src="./hd-most-days.svg" width="620" alt="most days, i'm somewhere between"/>
 
 <a href="https://kartikeycodes.tech"><img src="./t-days-1.svg" alt="Building & Shipping"/></a><br>
