@@ -21,7 +21,7 @@ Two things decide whether the output is any good, and neither is a parameter:
     featureless — brows, glasses and lips all dissolve.
 
 The grid bakes in an advance width of exactly 0.600 em (CHAR_W / FONT_SIZE), so
-after generating, run scripts/embed_portrait_font.py to inline JetBrains Mono.
+after generating, run scripts/embed_portrait_font.py to inline Geist Mono.
 Otherwise a viewer whose default monospace is narrower — Consolas is ≈0.55 —
 sees the portrait about 7% too narrow.
 

@@ -1,13 +1,13 @@
 # Embedded typeface
 
-[JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) v2.304, subset to
+[Geist Mono](https://github.com/vercel/geist-font), subset to
 only the characters each graphic actually draws, and inlined into the SVGs as
 base64 `@font-face`.
 
 Why inline it at all:
 
 * **Metrics.** The portrait's character grid assumes an advance width of exactly
-  0.600 em. JetBrains Mono is 600/1000 units, so the geometry is unchanged — but
+  0.600 em. Geist Mono is 600/1000 units, so the geometry is unchanged — but
   a viewer whose default monospace is narrower (Consolas is ≈0.55) would
   otherwise see the portrait about 7% too narrow. Inlining pins it.
 * **An external font URL cannot work here.** These SVGs are loaded through
@@ -17,10 +17,10 @@ Why inline it at all:
 
 | file | weight | covers |
 |---|---|---|
-| `jbmono-ramp.woff2` | 400 | the 13 ramp characters in `ascii.svg` |
-| `jbmono-head.woff2` | 600 | the letters used by the section headings |
-| `jbmono-400.woff2` | 400 | basic latin, for the stat graphics |
-| `jbmono-600.woff2` | 600 | basic latin, for the stat graphics |
+| `geistmono-ramp.woff2` | 400 | the 13 ramp characters in `ascii.svg` |
+| `geistmono-head.woff2` | 600 | the letters used by the section headings |
+| `geistmono-400.woff2` | 400 | basic latin, for the stat graphics |
+| `geistmono-600.woff2` | 600 | basic latin, for the stat graphics |
 
 Licensed under the SIL Open Font License 1.1 — see `OFL.txt`. Subsetting and
-redistribution in this form are permitted; the reserved font name is unchanged.
+redistribution in this form are permitted; Geist Mono is used unmodified apart from subsetting.

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Inline the ramp subset of JetBrains Mono into ascii.svg.
+"""Inline the ramp subset of Geist Mono into ascii.svg.
 
 The portrait is a one-off artifact — a photo pushed through a character ramp —
 so unlike the stat graphics it isn't regenerated on a schedule. Run this after
 ever rebuilding it.
 
 Why it matters: the character grid bakes in an advance width of exactly 0.600 em
-(CHAR_W 7.74 at font-size 12.9). JetBrains Mono is 600/1000 units, so the
+(CHAR_W 7.74 at font-size 12.9). Geist Mono is 600/1000 units, so the
 geometry is unchanged, but a viewer whose default monospace is narrower —
 Consolas is about 0.55 — would otherwise see the portrait roughly 7% too narrow.
 Inlining pins it for everyone. An external font URL is not an option: the SVG is
@@ -21,8 +21,8 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FONT = os.path.join(HERE, "fonts", "jbmono-ramp.woff2")
-FAMILY = ("JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
+FONT = os.path.join(HERE, "fonts", "geistmono-ramp.woff2")
+FAMILY = ("GeistMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
           "&apos;Liberation Mono&apos;,monospace")
 
 
@@ -32,13 +32,13 @@ def main():
     with open(target, encoding="utf-8") as f:
         svg = f.read()
 
-    if "JBMono" in svg:
+    if "GeistMono" in svg:
         print(f"{target}: already carries the font")
         return
 
     with open(FONT, "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
-    rule = (f"@font-face{{font-family:JBMono;font-style:normal;"
+    rule = (f"@font-face{{font-family:GeistMono;font-style:normal;"
             f"font-weight:400;font-display:block;"
             f"src:url(data:font/woff2;base64,{b64}) format('woff2')}}")
 

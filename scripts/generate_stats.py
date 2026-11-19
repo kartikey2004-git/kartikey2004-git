@@ -60,9 +60,9 @@ LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f",
              rule="#d8dee4", surface="#ffffff")
 DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
             rule="#30363d", surface="#0d1117")
-# JBMono is the inlined subset below; the rest is a fallback for the unlikely
+# GeistMono is the inlined subset below; the rest is a fallback for the unlikely
 # case a renderer ignores the embedded face.
-MONO = ("JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
+MONO = ("GeistMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
         "&apos;Liberation Mono&apos;,monospace")
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
@@ -78,19 +78,19 @@ def face(filename, weight):
     """
     with open(os.path.join(FONT_DIR, filename), "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
-    return (f"@font-face{{font-family:JBMono;font-style:normal;"
+    return (f"@font-face{{font-family:GeistMono;font-style:normal;"
             f"font-weight:{weight};font-display:block;"
             f"src:url(data:font/woff2;base64,{b64}) format('woff2')}}")
 
 
 def font_text():
     """Basic latin, both weights — for the data graphics."""
-    return face("jbmono-400.woff2", 400) + face("jbmono-600.woff2", 600)
+    return face("geistmono-400.woff2", 400) + face("geistmono-600.woff2", 600)
 
 
 def font_head():
     """Only the letters the section headings use."""
-    return face("jbmono-head.woff2", 600)
+    return face("geistmono-head.woff2", 600)
 
 WIDTH = 620            # every graphic shares one column width
 LEFT = 34              # shared left inset, so stacked blocks line up
