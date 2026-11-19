@@ -9,7 +9,7 @@ Outputs, all sharing one visual language with ascii.svg (the portrait):
   langs.svg   top languages, by bytes and by repo count
   year.svg    the year as a character map, in the portrait's own ramp
 
-Every file uses the portrait's grey ink, a monospace face, a transparent
+Every file uses the portrait's grey ink, Geist Sans (Geist Mono for the year grid), a transparent
 background, and the same left-to-right clipPath reveal with a cursor riding
 the edge. Motion is SMIL because GitHub strips <script> from READMEs.
 
@@ -64,11 +64,18 @@ DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
 # case a renderer ignores the embedded face.
 MONO = ("GeistMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
         "&apos;Liberation Mono&apos;,monospace")
+# Everything reads in Geist Sans except the character grids (the year map and
+# its ramp legend), which need a fixed advance and so stay in Geist Mono.
+SANS = ("GeistSans,ui-sans-serif,system-ui,-apple-system,"
+        "&apos;Segoe UI&apos;,Roboto,Helvetica,Arial,sans-serif")
+# Advance widths (em) of Geist Sans SemiBold, for placing the heading rule.
+HEAD_ADV = {" ":0.236,"!":0.243,"\"":0.376,"#":0.552,"$":0.656,"%":0.818,"&":0.677,"'":0.195,"(":0.306,")":0.306,"*":0.424,"+":0.566,",":0.225,"-":0.418,".":0.225,"/":0.508,"0":0.683,"1":0.427,"2":0.642,"3":0.637,"4":0.643,"5":0.656,"6":0.615,"7":0.538,"8":0.644,"9":0.618,":":0.306,";":0.306,"<":0.548,"=":0.548,">":0.548,"?":0.581,"@":0.944,"A":0.709,"B":0.695,"C":0.724,"D":0.708,"E":0.615,"F":0.6,"G":0.726,"H":0.719,"I":0.29,"J":0.617,"K":0.672,"L":0.586,"M":0.902,"N":0.748,"O":0.763,"P":0.664,"Q":0.757,"R":0.689,"S":0.668,"T":0.584,"U":0.699,"V":0.709,"W":0.991,"X":0.66,"Y":0.613,"Z":0.577,"[":0.375,"\\":0.485,"]":0.375,"^":0.45,"_":0.56,"`":0.268,"a":0.58,"b":0.621,"c":0.58,"d":0.621,"e":0.591,"f":0.429,"g":0.62,"h":0.601,"i":0.269,"j":0.308,"k":0.628,"l":0.297,"m":0.892,"n":0.601,"o":0.603,"p":0.621,"q":0.621,"r":0.409,"s":0.553,"t":0.427,"u":0.597,"v":0.584,"w":0.839,"x":0.628,"y":0.57,"z":0.567,"{":0.401,"|":0.284,"}":0.401,"~":0.523}
+
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
 
 @functools.lru_cache(maxsize=None)
-def face(filename, weight):
+def face(filename, weight, family="GeistSans"):
     """One @font-face rule with the subset inlined as a data URI.
 
     An external font URL cannot work here: these SVGs are loaded through <img>,
@@ -78,19 +85,24 @@ def face(filename, weight):
     """
     with open(os.path.join(FONT_DIR, filename), "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
-    return (f"@font-face{{font-family:GeistMono;font-style:normal;"
+    return (f"@font-face{{font-family:{family};font-style:normal;"
             f"font-weight:{weight};font-display:block;"
             f"src:url(data:font/woff2;base64,{b64}) format('woff2')}}")
 
 
 def font_text():
     """Basic latin, both weights — for the data graphics."""
-    return face("geistmono-400.woff2", 400) + face("geistmono-600.woff2", 600)
+    return face("geistsans-400.woff2", 400) + face("geistsans-600.woff2", 600)
 
 
 def font_head():
     """Only the letters the section headings use."""
-    return face("geistmono-head.woff2", 600)
+    return face("geistsans-head.woff2", 600)
+
+
+def font_grid():
+    """Geist Mono, for the year map's character grid only."""
+    return face("geistmono-400.woff2", 400, "GeistMono")
 
 WIDTH = 620            # every graphic shares one column width
 LEFT = 34              # shared left inset, so stacked blocks line up
@@ -212,7 +224,7 @@ def style(extra="", font=None):
 
 def head(w, h, font=None):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-            f'viewBox="0 0 {w} {h}" fill="none" font-family="{MONO}">'
+            f'viewBox="0 0 {w} {h}" fill="none" font-family="{SANS}">'
             + style(font=font))
 
 
@@ -354,18 +366,16 @@ def draw_langs(s):
 
 
 def draw_heading(word):
-    """A section heading in the mono face, with a hairline running right.
+    """A section heading in Geist Sans, with a hairline running right.
 
     GitHub strips <style> and style= from markdown, so a real markdown heading
     can only ever be GitHub's own sans. Rendering the label as an SVG is the
-    only way to put the page's own typeface on it. The rule starts past the
-    longest plausible advance (0.6em is the widest common monospace ratio), so
-    a narrower font on the viewer's machine widens the gap slightly rather than
-    colliding with the text.
+    only way to put the page's own typeface on it. The rule starts at the
+    text's measured width plus a fixed gap.
     """
     FS = 16
     H = 26
-    text_end = len(word) * FS * 0.6 + 18
+    text_end = sum(HEAD_ADV.get(c, 0.6) for c in word) * FS + 18
     p = [head(WIDTH, H, font=font_head())]
     p.append(label(0, 18, word, FS, "e-f", extra=' font-weight="600"'))
     p.append(f'<line x1="{text_end:.0f}" y1="12.5" x2="{WIDTH}" y2="12.5" '
@@ -389,7 +399,7 @@ def draw_year(s):
                 return i
         return 4
 
-    p = [head(WIDTH, H)]
+    p = [head(WIDTH, H, font=font_text() + font_grid())]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(pad_l, 16, "THE YEAR", 9, "m-f",
                      extra=' letter-spacing="1.3"')
@@ -401,7 +411,7 @@ def draw_year(s):
     lx = WIDTH - 6
     p.append(f'<g opacity="0">{fade(1.30)}'
              + label(lx - 78, 32, "less", 9, "m-f", "end")
-             + f'<text xml:space="preserve" x="{lx - 72}" y="32" class="d-f" '
+             + f'<text font-family="{MONO}" xml:space="preserve" x="{lx - 72}" y="32" class="d-f" '
              f'font-size="{FS}">{" ".join(RAMP[1:])}</text>'
              + label(lx, 32, "more", 9, "m-f", "end") + '</g>')
 
@@ -423,7 +433,7 @@ def draw_year(s):
                  f'from="0" to="{w_px:.1f}" begin="{delay:.2f}s" dur="0.40s" '
                  f'fill="freeze"/></rect></clipPath>')
         safe = line.replace("&", "&amp;").replace("<", "&lt;")
-        p.append(f'<g clip-path="url(#{cid})"><text xml:space="preserve" '
+        p.append(f'<g clip-path="url(#{cid})"><text font-family="{MONO}" xml:space="preserve" '
                  f'x="{pad_l}" y="{y + FS - 0.6:.1f}" class="d-f" '
                  f'font-size="{FS}">{safe}</text></g>')
 

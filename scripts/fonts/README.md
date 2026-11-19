@@ -1,26 +1,25 @@
-# Embedded typeface
+# Embedded typefaces
 
-[Geist Mono](https://github.com/vercel/geist-font), subset to
-only the characters each graphic actually draws, and inlined into the SVGs as
+[Geist](https://github.com/vercel/geist-font) — the site's own typeface — subset
+to only the characters each graphic actually draws, and inlined into the SVGs as
 base64 `@font-face`.
 
-Why inline it at all:
+* **Geist Sans** sets the headings and the stat graphics.
+* **Geist Mono** sets the ASCII portrait and the year map's character grid.
+  Both bake in an advance width of exactly 0.600 em, which Geist Mono has
+  (600/1000 units), so a viewer's narrower default monospace (Consolas is
+  ≈0.55) can't squeeze them.
 
-* **Metrics.** The portrait's character grid assumes an advance width of exactly
-  0.600 em. Geist Mono is 600/1000 units, so the geometry is unchanged — but
-  a viewer whose default monospace is narrower (Consolas is ≈0.55) would
-  otherwise see the portrait about 7% too narrow. Inlining pins it.
-* **An external font URL cannot work here.** These SVGs are loaded through
-  `<img>`, and a browser refuses to fetch subresources for an image document.
-  A base64 data URI is the only mechanism, and it keeps the page free of
-  third-party requests.
+An external font URL cannot work here: these SVGs are loaded through `<img>`,
+and a browser refuses to fetch subresources for an image document. A base64 data
+URI is the only mechanism, and it keeps the page free of third-party requests.
 
-| file | weight | covers |
+| file | face | covers |
 |---|---|---|
-| `geistmono-ramp.woff2` | 400 | the 13 ramp characters in `ascii.svg` |
-| `geistmono-head.woff2` | 600 | the letters used by the section headings |
-| `geistmono-400.woff2` | 400 | basic latin, for the stat graphics |
-| `geistmono-600.woff2` | 600 | basic latin, for the stat graphics |
+| `geistmono-ramp.woff2` | Mono 400 | the 13 ramp characters in `ascii.svg` |
+| `geistmono-400.woff2` | Mono 400 | basic latin, for the year grid |
+| `geistsans-400.woff2` | Sans 400 | basic latin, for the stat graphics |
+| `geistsans-600.woff2` | Sans 600 | basic latin, for the stat graphics |
+| `geistsans-head.woff2` | Sans 600 | printable ascii, for the section headings |
 
-Licensed under the SIL Open Font License 1.1 — see `OFL.txt`. Subsetting and
-redistribution in this form are permitted; Geist Mono is used unmodified apart from subsetting.
+Licensed under the SIL Open Font License 1.1 — see `OFL.txt`.
