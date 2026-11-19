@@ -17,7 +17,7 @@
 <br>
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
-<img src="./t-stack.svg" width="620" alt="Languages: JavaScript, TypeScript, C++, Python. Data: MongoDB, PostgreSQL, SQL, Redis. Backend & web: React, Next.js, Tailwind CSS, Node.js, Express, Prisma, Firebase, Supabase, Appwrite, ShadCN, Clerk, Postman. DevOps & infrastructure: Vercel, Netlify, Render, Git, RabbitMQ, Docker, AWS. Observability: Prometheus, Alertmanager, Loki, Tempo, OpenTelemetry, ELK Stack, k6."/>
+<img src="./t-stack.svg?v=3" width="620" alt="Languages: JavaScript, TypeScript, C++, Python. Data: MongoDB, PostgreSQL, SQL, Redis. Backend & web: React, Next.js, Tailwind CSS, Node.js, Express, Prisma, Firebase, Supabase, Appwrite, ShadCN, Clerk, Postman. DevOps & infrastructure: Vercel, Netlify, Render, Git, RabbitMQ, Docker, AWS. Observability: Prometheus, Alertmanager, Loki, Tempo, OpenTelemetry, ELK Stack, k6."/>
 
 <br>
 <img src="./hd-currently.svg" width="620" alt="currently"/>
